@@ -1,16 +1,21 @@
 import React from "react";
-import "./App.css";
+import "./index.css";
+
+import Navbar from "./component/Navbar";
+import About from "./component/About";
+import Projects from "./component/Projects";
+import Skills from "./component/Skills";
+import Connect from "./component/Connect";
 
 const App = () => {
   return (
-    <div className="container">
-      <header>This is Heading</header>
-
-      <nav>This is Navbar</nav>
-
-      <div>This is where body part remains</div>
-      <footer>This is footer part</footer>
-    </div>
+    <main className="text-gray-400 bg-gray-900 body-font">
+      <Navbar />
+      <About />
+      <Projects />
+      <Skills />
+      <Connect />
+    </main>
   );
 };
 
